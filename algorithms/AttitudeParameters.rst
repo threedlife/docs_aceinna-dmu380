@@ -110,24 +110,6 @@ transformation matrix of the body-frame in the NED-frame, |R_BinN| , to the quat
                       \begin{bmatrix} {
                                         \begin{array}{ccc}
                                                            { \cos{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} } &
-                                                           { -\sin{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
-                                                           { 0 }
-                                                           \cr
-                                                           { \sin{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
-                                                           { \cos{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
-                                                           {0}
-                                                           \cr
-                                                           {0} &
-                                                           {0} &
-                                                           {1}
-                                        \end{array}
-                      } \end{bmatrix}
-                    }
-                    \cdot
-                    {
-                      \begin{bmatrix} {
-                                        \begin{array}{ccc}
-                                                           { \cos{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} } &
                                                            { \sin{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} \cdot \sin{\begin{pmatrix} {{^\perp}{\phi}{^B}} \end{pmatrix}} } &
                                                            { \sin{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} \cdot \cos{\begin{pmatrix} {{^\perp}{\phi}{^B}} \end{pmatrix}} }
                                                            \cr
@@ -138,6 +120,24 @@ transformation matrix of the body-frame in the NED-frame, |R_BinN| , to the quat
                                                            { -\sin{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} } &
                                                            { \cos{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} \cdot \sin{\begin{pmatrix} {{^\perp}{\phi}{^B}} \end{pmatrix}} } &
                                                            { \cos{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} \cdot \cos{\begin{pmatrix} {{^\perp}{\phi}{^B}} \end{pmatrix}} }
+                                        \end{array}
+                      } \end{bmatrix}
+                    }
+		    \cdot
+		    {
+                      \begin{bmatrix} {
+                                        \begin{array}{ccc}
+                                                           { \cos{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
+                                                           { -\sin{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
+                                                           { 0 }
+                                                           \cr
+                                                           { \sin{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
+                                                           { \cos{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
+                                                           {0}
+                                                           \cr
+                                                           {0} &
+                                                           {0} &
+                                                           {1}
                                         \end{array}
                       } \end{bmatrix}
                     }
