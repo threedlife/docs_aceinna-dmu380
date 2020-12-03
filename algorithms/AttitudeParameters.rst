@@ -109,7 +109,7 @@ transformation matrix of the body-frame in the NED-frame, |R_BinN| , to the quat
     {{^N}{R}{^B}} = {
                       \begin{bmatrix} {
                                         \begin{array}{ccc}
-                                                           { \cos{\begin{pmatrix} {{^\perp}{\theta}{^B}} \end{pmatrix}} } &
+                                                           { \cos{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
                                                            { -\sin{\begin{pmatrix} {{^N}{\psi}{^\perp}} \end{pmatrix}} } &
                                                            { 0 }
                                                            \cr
